@@ -1,6 +1,12 @@
 # SkillSense - Graph-based Skill Recommendation System
 
-SkillSense provides not only personalized but also explainable recommendations that support informed career growth.
+SkillSense is a graph-based skill recommendation system designed to help individuals understand their current skill landscape and identify what to learn next based on what skills their peers possess. Today, learners struggle to know which skills matter for specific roles, and how to prioritize their learning path. At the same time, many recommendation systems need large datasets to work effectively. I built SkillSense to solve both challenges.
+
+The system extracts skills from resumes, professional summaries, portfolios, or even LinkedIn exports(pdf, docx), using semantic language models to ensure accuracy and context. Each skill is returned with evidence pulled directly from the user's documents, along with a confidence score, so the results remain transparent and trustworthy. The extracted skills are then stored in a Neo4j graph along with interaction history.
+
+What makes SkillSense powerful is its recommendation engine. By analyzing users with similar skill profiles and career interests, the system identifies meaningful skill gaps and proposes new skills to learn—again, with confidence scores. Because the graph grows as more users interact, recommendations continuously improve without requiring a large initial dataset.
+
+In short, SkillSense provides not only personalized but also explainable recommendations that support informed career growth and lifelong learning.
 
 Challenge Tackled: Structured skill profile generation with evidence and confidence scores ✅ Recommendation of skills based on users who share similar interests (this enables skill-gap analysis) ✅ Limited training data: user interactions, interested roles, skills stored in a graph to improve future recommendations ✅Mutli-source support- system takes pdf, docx format of resume, professional summaries, portfolio or linked pages as pdf, docx ✅ Scalability- graph expands as more users interact with the system, improving the quality of recommendations ✅ 
 
@@ -21,6 +27,8 @@ venv\Scripts\activate        # Windows
 
 3. Install Dependencies
 pip install -r requirements.txt
+
+**The json file has the skill vocabulary used. It is a sample skill set and can be extended. Make sure to use the same json format as skills_vocab.json if adding more skills. 
 
 4. Configure Secrets
 
