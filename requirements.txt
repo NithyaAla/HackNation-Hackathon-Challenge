@@ -1,0 +1,8 @@
+gradio
+neo4j
+spacy>=3.6.0
+sentence-transformers>=2.2.2
+python-docx
+pypdf
+torch
+numpy
