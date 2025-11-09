@@ -1,4 +1,11 @@
-# HackNation-Hackathon-Challange
+# SkillSense - Graph-based Skill Recommendation System
+
+SkillSense provides not only personalized but also explainable recommendations that support informed career growth.
+
+Challenge Tackled: Structured skill profile generation with evidence and confidence scores ✅ Recommendation of skills based on users who share similar interests (this enables skill-gap analysis) ✅ Limited training data: user interactions, interested roles, skills stored in a graph to improve future recommendations ✅Mutli-source support- system takes pdf, docx format of resume, professional summaries, portfolio or linked pages as pdf, docx ✅ Scalability- graph expands as more users interact with the system, improving the quality of recommendations ✅ 
+
+Interact with the app (Caution: Free tier DB used, limited users):  
+
 Setup & Deployment (Developer Instructions)
 
 The application can be run locally or deployed on Hugging Face Spaces. Below are the steps for both workflows.
